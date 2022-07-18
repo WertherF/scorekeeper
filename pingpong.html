@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Ping Pong Score Keeper</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-one-third">
+                <div class="card">
+
+
+                    <div class="card-header">
+                        <div class="card-header-title">
+                            <h1>Ping Pong Score Keeper</h1>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1611251135345-18c56206b863?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBpbmclMjBwb25nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card-content">
+                        <div class="content">
+                            <span id="playerOne">0</span> to <span id="playerTwo">0</span>
+                            <p>Use the buttons to keep score.</p>
+
+
+                            <div>
+                                <label for="play">Playing To</label>
+                                <select name="goal" id="goalSelect">
+                                    <option value="begin">-</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card" id="scoreMenu">
+                        <footer class="card-footer">
+                            <div class="buttons">
+                                <button class="card-footer-item button is-info" id="pOne">+1 Player One</button>
+                                <button class="card-footer-item button is-danger" id="pTwo">+1 Player Two</button>
+                                <button class="card-footer-item button is-warning" id="reset">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="pingpong.js"></script>
+</body>
+
+</html>
